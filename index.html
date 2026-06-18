@@ -5,6 +5,26 @@
 <title>Kontakt</title>
 <link rel="icon" href="favicon.png">
 
+
+
+
+<script>
+const redirects = {
+  "vinted": "https://www.vinted.pl/member/3158643642-thinwhit3duke",
+};
+
+const path = location.pathname.replace("/", "");
+
+if (redirects[path]) {
+  window.location.href = redirects[path];
+} else {
+  document.body.innerHTML = "404";
+}
+</script>
+    
+
+
+    
 <style>
 body{
     margin:0;
